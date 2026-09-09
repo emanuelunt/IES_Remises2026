@@ -1,0 +1,8 @@
+﻿Fecha y hora: 04/09/2026 18:00:51.906
+Tipo de error: Exception
+Mensaje:
+Error de prueba
+Pila de error:
+
+
+==============================================

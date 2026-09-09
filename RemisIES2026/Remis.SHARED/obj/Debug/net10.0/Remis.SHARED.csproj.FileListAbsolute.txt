@@ -1,0 +1,12 @@
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\bin\Debug\net10.0\Remis.SHARED.deps.json
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\bin\Debug\net10.0\Remis.SHARED.dll
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\bin\Debug\net10.0\Remis.SHARED.pdb
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.GeneratedMSBuildEditorConfig.editorconfig
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.AssemblyInfoInputs.cache
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.AssemblyInfo.cs
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.csproj.CoreCompileInputs.cache
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.sourcelink.json
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.dll
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\refint\Remis.SHARED.dll
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\Remis.SHARED.pdb
+D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.SHARED\obj\Debug\net10.0\ref\Remis.SHARED.dll

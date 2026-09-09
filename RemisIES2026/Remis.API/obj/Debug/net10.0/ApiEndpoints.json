@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Personas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "GetById",
+    "RelativePath": "api/Personas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "GetByDni",
+    "RelativePath": "api/Personas/dni/{dni}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dni",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

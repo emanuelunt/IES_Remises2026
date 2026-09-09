@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Remis.API/Remis.API.csproj" />
+  <Project Path="Remis.CORE/Remis.CORE.csproj" />
+  <Project Path="Remis.INFRASTRUCTURE/Remis.INFRASTRUCTURE.csproj" />
+  <Project Path="Remis.SHARED/Remis.SHARED.csproj" />
+  <Project Path="Remis.TESTS/Remis.TESTS.csproj" />
+</Solution>

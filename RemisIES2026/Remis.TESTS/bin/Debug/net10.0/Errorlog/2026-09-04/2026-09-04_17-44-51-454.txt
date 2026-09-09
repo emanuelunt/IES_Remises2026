@@ -1,0 +1,14 @@
+﻿==============================================
+ ERROR DE LA APLICACIÓN
+==============================================
+
+Fecha y hora: 04/09/2026 17:44:51.454
+Tipo de error: Exception
+
+Mensaje:
+Este es un error de prueba
+
+Pila de error:
+
+
+==============================================
