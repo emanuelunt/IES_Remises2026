@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Remis.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+203b4b31b6f8d8c73f02d8ebe6a5a3b93865a11c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2485e9cd80760901e28cbeea1163891aff8f9830")]
 [assembly: System.Reflection.AssemblyProductAttribute("Remis.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Remis.INFRASTRUCTURE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

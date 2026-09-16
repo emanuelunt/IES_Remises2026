@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "Create",
+    "RelativePath": "api/Personas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Remis.API.DTOs.Persona.PersonaCrearDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
     "Method": "GetById",
     "RelativePath": "api/Personas/{id}",
     "HttpMethod": "GET",
@@ -21,6 +37,22 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "Buscar",
+    "RelativePath": "api/Personas/buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "termino",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
