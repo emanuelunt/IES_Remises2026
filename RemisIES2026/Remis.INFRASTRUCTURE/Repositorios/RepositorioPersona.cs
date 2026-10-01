@@ -175,22 +175,6 @@ namespace Remis.INFRASTRUCTURE.Repositorios
             }
         }
 
-        public Task<bool> ExisteDniAsync(string dni_)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<bool> ExisteEmailAsync(string email_)
-        {
-            throw new NotImplementedException();
-        }       
-        public Task<bool> ActualizarAsync(Persona persona_)
-        {
-            throw new NotImplementedException();
-        }
-
-       
-
         public async Task<int> CrearAsync(Persona persona_)
         {
             try
@@ -199,7 +183,7 @@ namespace Remis.INFRASTRUCTURE.Repositorios
                 using IDbCommand _comando = _conexion.CreateCommand();
                 _comando.CommandType = CommandType.StoredProcedure;
                 _comando.CommandText = "sp_persona_crear";
-           
+
                 IDbDataParameter parametroApellido = _comando.CreateParameter();
                 parametroApellido.ParameterName = "@_apellido";
                 parametroApellido.Value = persona_.Apellido;
@@ -240,9 +224,9 @@ namespace Remis.INFRASTRUCTURE.Repositorios
                 parametroActivo.Value = persona_.Activo;
                 _comando.Parameters.Add(parametroActivo);
 
-                
+
                 int resultado = Convert.ToInt32(_comando.ExecuteScalar());
-                                
+
                 return (resultado);
             }
             catch (MySqlException error)
@@ -252,9 +236,159 @@ namespace Remis.INFRASTRUCTURE.Repositorios
             }
         }
 
-        public Task<bool> EliminarAsync(int id_)
+        public async Task<bool> ExisteDniAsync(string dni_)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using IDbConnection _conexion = await _conn.obtenerConexionAsync();
+                using IDbCommand _comando = _conexion.CreateCommand();
+                _comando.CommandType = CommandType.StoredProcedure;
+                _comando.CommandText = "sp_persona_existe_dni";
+
+                //crear parametro
+                IDbDataParameter parametro = _comando.CreateParameter();
+                parametro.ParameterName = "_dni";
+                parametro.Value = dni_;
+                _comando.Parameters.Add(parametro);
+
+                // ejecucion del procedimiento para obtener el resultado (0 o 1)
+                int resultado = Convert.ToInt32(_comando.ExecuteScalar());
+
+                // retornar true si el resultado es 1
+                return resultado == 1;
+            }
+            catch (MySqlException error)
+            {
+                ArchivoLog.RegistrarErrores(error);
+                return false;
+            }
+        }
+
+        public async Task<bool> ExisteEmailAsync(string email_)
+        {
+            try
+            {
+                using IDbConnection _conexion = await _conn.obtenerConexionAsync();
+                using IDbCommand _comando = _conexion.CreateCommand();
+                _comando.CommandType = CommandType.StoredProcedure;
+                _comando.CommandText = "sp_persona_existe_email";
+
+                IDbDataParameter parametro = _comando.CreateParameter();
+                parametro.ParameterName = "_email";
+                parametro.Value = email_;
+                _comando.Parameters.Add(parametro);
+
+                int resultado = Convert.ToInt32(_comando.ExecuteScalar());
+                return resultado == 1;
+            }
+            catch (MySqlException error)
+            {
+                ArchivoLog.RegistrarErrores(error);
+                return false;
+            }
+        }       
+        public async Task<bool> ActualizarAsync(Persona persona_)
+        {
+            try
+            {
+                using IDbConnection _conexion = await _conn.obtenerConexionAsync();
+                using IDbCommand _comando = _conexion.CreateCommand();
+                _comando.CommandType = CommandType.StoredProcedure;
+                _comando.CommandText = "sp_persona_actualizar";
+
+                // parametro id
+                IDbDataParameter parametroId = _comando.CreateParameter();
+                parametroId.ParameterName = "_id";
+                parametroId.Value = persona_.IdPersona;
+                _comando.Parameters.Add(parametroId);
+
+                // parametro apellido
+                IDbDataParameter parametroApellido = _comando.CreateParameter();
+                parametroApellido.ParameterName = "_apellido";
+                parametroApellido.Value = persona_.Apellido;
+                _comando.Parameters.Add(parametroApellido);
+
+                // parametro nombre
+                IDbDataParameter parametroNombre = _comando.CreateParameter();
+                parametroNombre.ParameterName = "_nombre";
+                parametroNombre.Value = persona_.Nombre;
+                _comando.Parameters.Add(parametroNombre);
+
+                // parametro DNI
+                IDbDataParameter parametroDni = _comando.CreateParameter();
+                parametroDni.ParameterName = "_dni";
+                parametroDni.Value = persona_.Dni;
+                _comando.Parameters.Add(parametroDni);
+
+                // parametro Teléfono
+                IDbDataParameter parametroTelefono = _comando.CreateParameter();
+                parametroTelefono.ParameterName = "_telefono";
+                parametroTelefono.Value = persona_.Telefono;
+                _comando.Parameters.Add(parametroTelefono);
+
+                // parametro Email
+                IDbDataParameter parametroEmail = _comando.CreateParameter();
+                parametroEmail.ParameterName = "_email";
+                parametroEmail.Value = persona_.Email;
+                _comando.Parameters.Add(parametroEmail);
+
+                // parametro Dirección
+                IDbDataParameter parametroDireccion = _comando.CreateParameter();
+                parametroDireccion.ParameterName = "_direccion";
+                parametroDireccion.Value = persona_.Direccion;
+                _comando.Parameters.Add(parametroDireccion);
+
+                //// parametro Fecha Alta
+                //IDbDataParameter parametroFechaAlta = _comando.CreateParameter();
+                //parametroFechaAlta.ParameterName = "_fecha_alta";
+                //parametroFechaAlta.Value = persona_.FechaAlta;
+                //_comando.Parameters.Add(parametroFechaAlta);
+
+                // parametro Activo
+                IDbDataParameter parametroActivo = _comando.CreateParameter();
+                parametroActivo.ParameterName = "_activo";
+                parametroActivo.Value = persona_.Activo;
+                _comando.Parameters.Add(parametroActivo);
+
+                // ejecutar procedimiento para obtener el numero de filas afectadas
+                int filasAfectadas = Convert.ToInt32(_comando.ExecuteScalar());
+
+                // retornar true si se actualizo al menos una fila
+                return filasAfectadas > 0;
+            }
+            catch (MySqlException error)
+            {
+                ArchivoLog.RegistrarErrores(error);
+                return false;
+            }
+        }           
+
+        public async Task<bool> EliminarAsync(int id_)
+        {
+            try
+            {
+                using IDbConnection _conexion = await _conn.obtenerConexionAsync();
+                using IDbCommand _comando = _conexion.CreateCommand();
+                _comando.CommandType = CommandType.StoredProcedure;
+                _comando.CommandText = "sp_persona_eliminar";
+
+                // parametro ID
+                IDbDataParameter parametro = _comando.CreateParameter();
+                parametro.ParameterName = "_id";
+                parametro.Value = id_;
+                _comando.Parameters.Add(parametro);
+
+                // obtener el numero de filas afectadas
+                int filasAfectadas = Convert.ToInt32(_comando.ExecuteScalar());
+
+                // retornar true si se elimino al menos una fila
+                return filasAfectadas > 0;
+            }
+            catch (MySqlException error)
+            {
+                ArchivoLog.RegistrarErrores(error);
+                return false;
+            }
         }
    
     }

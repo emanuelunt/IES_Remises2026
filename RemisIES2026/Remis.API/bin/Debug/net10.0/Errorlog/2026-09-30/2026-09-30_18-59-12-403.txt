@@ -1,0 +1,15 @@
+﻿Fecha y hora: 30/09/2026 18:59:12.403
+Tipo de error: MySqlException
+Mensaje:
+Incorrect number of arguments for PROCEDURE bd_remis2026.sp_persona_actualizar; expected 8, got 9
+Pila de error:
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/ServerSession.cs:line 1185
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 37
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 133
+   at MySqlConnector.MySqlDataReader.InitAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 489
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, MySqlConnectorSemanticConventionsKinds conventionsKinds, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 58
+   at MySqlConnector.MySqlCommand.ExecuteScalarAsync(IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 324
+   at MySqlConnector.MySqlCommand.ExecuteScalar() in /_/src/MySqlConnector/MySqlCommand.cs:line 110
+   at Remis.INFRASTRUCTURE.Repositorios.RepositorioPersona.ActualizarAsync(Persona persona_) in D:\ProyectosIES2025\IES_Remises\RemisIES2026\Remis.INFRASTRUCTURE\Repositorios\RepositorioPersona.cs:line 354
+
+==============================================

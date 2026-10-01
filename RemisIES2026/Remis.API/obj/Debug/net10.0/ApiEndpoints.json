@@ -43,6 +43,43 @@
   },
   {
     "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "Update",
+    "RelativePath": "api/Personas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Remis.API.DTOs.Persona.PersonaActualizarDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
+    "Method": "Delete",
+    "RelativePath": "api/Personas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Remis.API.Controllers.PersonasController",
     "Method": "Buscar",
     "RelativePath": "api/Personas/buscar",
     "HttpMethod": "GET",
