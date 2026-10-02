@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Remis.SHARED")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2c2a33f18688e834fe477d1c490a17df56b742b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96d572975f1e025a26bbf46cb05bf6cf8f136d62")]
 [assembly: System.Reflection.AssemblyProductAttribute("Remis.SHARED")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Remis.SHARED")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

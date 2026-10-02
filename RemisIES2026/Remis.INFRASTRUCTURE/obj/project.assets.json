@@ -378,25 +378,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Monitor_Plano\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Marcelo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj",
+      "projectUniqueName": "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj",
       "projectName": "Remis.INFRASTRUCTURE",
-      "projectPath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj",
-      "packagesPath": "C:\\Users\\Monitor_Plano\\.nuget\\packages\\",
-      "outputPath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.INFRASTRUCTURE\\obj\\",
+      "projectPath": "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj",
+      "packagesPath": "C:\\Users\\Marcelo\\.nuget\\packages\\",
+      "outputPath": "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.INFRASTRUCTURE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Monitor_Plano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Marcelo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -405,18 +403,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.CORE\\Remis.CORE.csproj": {
-              "projectPath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.CORE\\Remis.CORE.csproj"
+            "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.CORE\\Remis.CORE.csproj": {
+              "projectPath": "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.CORE\\Remis.CORE.csproj"
             },
-            "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.SHARED\\Remis.SHARED.csproj": {
-              "projectPath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.SHARED\\Remis.SHARED.csproj"
+            "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.SHARED\\Remis.SHARED.csproj": {
+              "projectPath": "D:\\ProyectoIES\\IES_Remises2026\\RemisIES2026\\Remis.SHARED\\Remis.SHARED.csproj"
             }
           }
         }
@@ -463,7 +461,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

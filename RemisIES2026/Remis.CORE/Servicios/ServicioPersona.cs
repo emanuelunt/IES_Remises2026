@@ -47,34 +47,10 @@ namespace Remis.CORE.Servicios
         public async Task<int> CrearAsync(Persona _persona)
         {
            
-            if (_persona == null)
-                throw new ArgumentNullException(nameof(_persona), "La persona no puede ser nula");
+            //if (_persona == null)
+            //    throw new ArgumentNullException(nameof(_persona), "La persona no puede ser nula");
           
-            if (string.IsNullOrWhiteSpace(_persona.Apellido))
-                throw new ArgumentException("El apellido es obligatorio");
-
-            if (string.IsNullOrWhiteSpace(_persona.Nombre))
-                throw new ArgumentException("El nombre es obligatorio");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Apellido) && _persona.Apellido.Length > 50)
-                throw new ArgumentException("El apellido no puede tener más de 50 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Nombre) && _persona.Nombre.Length > 50)
-                throw new ArgumentException("El nombre no puede tener más de 50 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Dni) && _persona.Dni.Length > 10)
-                throw new ArgumentException("El DNI no puede tener más de 10 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Telefono) && _persona.Telefono.Length > 20)
-                throw new ArgumentException("El teléfono no puede tener más de 20 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Email) && _persona.Email.Length > 100)
-                throw new ArgumentException("El email no puede tener más de 100 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Direccion) && _persona.Direccion.Length > 100)
-                throw new ArgumentException("La dirección no puede tener más de 100 caracteres");
-
-
+            
             if (!string.IsNullOrWhiteSpace(_persona.Dni))
             {
                 if (await _repositorio.ExisteDniAsync(_persona.Dni))
@@ -99,33 +75,6 @@ namespace Remis.CORE.Servicios
             // Validaciones de negocio
             if (_persona == null)
                 throw new ArgumentNullException(nameof(_persona), "La persona no puede ser nula");
-
-            if (_persona.IdPersona <= 0)
-                throw new ArgumentException("El ID no es válido");
-
-            if (string.IsNullOrWhiteSpace(_persona.Apellido))
-                throw new ArgumentException("El apellido es obligatorio");
-
-            if (string.IsNullOrWhiteSpace(_persona.Nombre))
-                throw new ArgumentException("El nombre es obligatorio");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Apellido) && _persona.Apellido.Length > 50)
-                throw new ArgumentException("El apellido no puede tener más de 50 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Nombre) && _persona.Nombre.Length > 50)
-                throw new ArgumentException("El nombre no puede tener más de 50 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Dni) && _persona.Dni.Length > 10)
-                throw new ArgumentException("El DNI no puede tener más de 10 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Telefono) && _persona.Telefono.Length > 20)
-                throw new ArgumentException("El teléfono no puede tener más de 20 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Email) && _persona.Email.Length > 100)
-                throw new ArgumentException("El email no puede tener más de 100 caracteres");
-
-            if (!string.IsNullOrWhiteSpace(_persona.Direccion) && _persona.Direccion.Length > 100)
-                throw new ArgumentException("La dirección no puede tener más de 100 caracteres");
 
             // Verificar que la persona existe
             var personaExistente = await _repositorio.ObtenerPorIdAsync(_persona.IdPersona);
