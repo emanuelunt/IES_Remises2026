@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4DA5CAE8-962D-2FDC-D4CA-1F1E31F2B23C}|Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.infrastructure\\repositorios\\repositoriopersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4DA5CAE8-962D-2FDC-D4CA-1F1E31F2B23C}|Remis.INFRASTRUCTURE\\Remis.INFRASTRUCTURE.csproj|solutionrelative:remis.infrastructure\\repositorios\\repositoriopersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6DBF6447-BBE6-21DD-5053-3569410A4A7F}|Remis.CORE\\Remis.CORE.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.core\\servicios\\serviciopersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6DBF6447-BBE6-21DD-5053-3569410A4A7F}|Remis.CORE\\Remis.CORE.csproj|solutionrelative:remis.core\\servicios\\serviciopersona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\validadores\\personaactualizarvalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\validadores\\personaactualizarvalidador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\controllers\\personascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\validadores\\personacrearvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\validadores\\personacrearvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\dtos\\persona\\personaactualizardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\dtos\\persona\\personaactualizardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|d:\\proyectosies2025\\ies_remises\\remisies2026\\remis.api\\dtos\\persona\\personacreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF40CDA0-F80B-2B3C-83DA-8789BE8F4BF6}|Remis.API\\Remis.API.csproj|solutionrelative:remis.api\\dtos\\persona\\personacreardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,58 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PersonaActualizarDto.cs",
               "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\DTOs\\Persona\\PersonaActualizarDto.cs",
               "RelativeDocumentMoniker": "Remis.API\\DTOs\\Persona\\PersonaActualizarDto.cs",
               "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\DTOs\\Persona\\PersonaActualizarDto.cs",
               "RelativeToolTip": "Remis.API\\DTOs\\Persona\\PersonaActualizarDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T19:43:40.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ServicioPersona.cs",
-              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.CORE\\Servicios\\ServicioPersona.cs",
-              "RelativeDocumentMoniker": "Remis.CORE\\Servicios\\ServicioPersona.cs",
-              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.CORE\\Servicios\\ServicioPersona.cs",
-              "RelativeToolTip": "Remis.CORE\\Servicios\\ServicioPersona.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAuwFoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T19:33:02.466Z",
+              "WhenOpened": "2026-10-02T21:07:56.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RepositorioPersona.cs",
-              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.INFRASTRUCTURE\\Repositorios\\RepositorioPersona.cs",
-              "RelativeDocumentMoniker": "Remis.INFRASTRUCTURE\\Repositorios\\RepositorioPersona.cs",
-              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.INFRASTRUCTURE\\Repositorios\\RepositorioPersona.cs",
-              "RelativeToolTip": "Remis.INFRASTRUCTURE\\Repositorios\\RepositorioPersona.cs",
-              "ViewState": "AgIAAEcBAAAAAAAAAAAkwFEBAAAtAAAAAAAAAA==",
+              "Title": "PersonaActualizarValidador.cs",
+              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Validadores\\PersonaActualizarValidador.cs",
+              "RelativeDocumentMoniker": "Remis.API\\Validadores\\PersonaActualizarValidador.cs",
+              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Validadores\\PersonaActualizarValidador.cs",
+              "RelativeToolTip": "Remis.API\\Validadores\\PersonaActualizarValidador.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAIwCwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T18:49:36.724Z",
+              "WhenOpened": "2026-10-02T21:07:01.588Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PersonasController.cs",
               "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Controllers\\PersonasController.cs",
               "RelativeDocumentMoniker": "Remis.API\\Controllers\\PersonasController.cs",
               "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Controllers\\PersonasController.cs",
               "RelativeToolTip": "Remis.API\\Controllers\\PersonasController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAAwGsAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-30T18:46:43.152Z",
+              "WhenOpened": "2026-10-02T20:19:28.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Program.cs",
+              "RelativeDocumentMoniker": "Remis.API\\Program.cs",
+              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Program.cs",
+              "RelativeToolTip": "Remis.API\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAABnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T20:16:55.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonaCrearValidator.cs",
+              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Validadores\\PersonaCrearValidator.cs",
+              "RelativeDocumentMoniker": "Remis.API\\Validadores\\PersonaCrearValidator.cs",
+              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\Validadores\\PersonaCrearValidator.cs",
+              "RelativeToolTip": "Remis.API\\Validadores\\PersonaCrearValidator.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T19:45:55.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonaCrearDto.cs",
+              "DocumentMoniker": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\DTOs\\Persona\\PersonaCrearDto.cs",
+              "RelativeDocumentMoniker": "Remis.API\\DTOs\\Persona\\PersonaCrearDto.cs",
+              "ToolTip": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.API\\DTOs\\Persona\\PersonaCrearDto.cs",
+              "RelativeToolTip": "Remis.API\\DTOs\\Persona\\PersonaCrearDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T18:42:23.74Z",
               "EditorCaption": ""
             },
             {

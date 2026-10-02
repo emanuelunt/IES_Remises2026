@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Mvc;
 using Remis.API.DTOs.Persona;
 using Remis.CORE.Entidades;
 using Remis.CORE.Servicios;
@@ -10,10 +11,15 @@ namespace Remis.API.Controllers
     public class PersonasController : ControllerBase
     {
         private readonly ServicioPersona _servicio;
+        private IValidator<PersonaCrearDto> _validatorCrearPersona;
+        private IValidator<PersonaActualizarDto> _validatorActualizarPersona;
 
-        public PersonasController(ServicioPersona servicio)
+        public PersonasController(ServicioPersona servicio,
+            IValidator<PersonaCrearDto> validatorCrearPersona, IValidator<PersonaActualizarDto> validatorActualizarPersona)
         {
             _servicio = servicio;
+            _validatorCrearPersona = validatorCrearPersona;
+            _validatorActualizarPersona = validatorActualizarPersona;
         }
 
         [HttpGet]
@@ -22,9 +28,9 @@ namespace Remis.API.Controllers
             var personas = await _servicio.AllAsync();
             return Ok(personas);
         }
-        
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+
+        [HttpGet("{id:int}")] // api/personas/5 , parametro de ruta
+        public async Task<IActionResult> GetById([FromRoute] int id)
         {
             var persona = await _servicio.GetByIdAsync(id);
             if (persona == null)
@@ -41,7 +47,7 @@ namespace Remis.API.Controllers
             return Ok(persona);
         }
 
-        // GET: api/personas/buscar?termino=juan
+        // GET: api/personas/buscar?termino=juan , parametro de query string
         [HttpGet("buscar")]
         public async Task<IActionResult> Buscar([FromQuery] string termino)
         {            
@@ -54,7 +60,15 @@ namespace Remis.API.Controllers
         public async Task<IActionResult> Create([FromBody] PersonaCrearDto dto)
         {
               
-                Persona persona = new Persona
+            var validationResultado = await _validatorCrearPersona.ValidateAsync(dto);
+
+            if (!validationResultado.IsValid)
+            {
+                 var errores = validationResultado.Errors.Select(e => e.ErrorMessage).ToList();
+                 return BadRequest(new { Mensaje = "Error de validación", Errores = errores });              
+            }
+
+            Persona persona = new Persona
                 {
                     Apellido = dto.Apellido,
                     Nombre = dto.Nombre,
@@ -64,10 +78,10 @@ namespace Remis.API.Controllers
                     Direccion = dto.Direccion
                 };
 
-                int id = await _servicio.CrearAsync(persona);
-                persona.IdPersona = id;
+            int id = await _servicio.CrearAsync(persona);
+            persona.IdPersona = id;
 
-               PersonaDto nuevaPersona = new PersonaDto
+            PersonaDto nuevaPersona = new PersonaDto
                 {
                     IdPersona = persona.IdPersona,
                     Apellido = persona.Apellido ?? string.Empty,
@@ -80,16 +94,25 @@ namespace Remis.API.Controllers
                     Activo = persona.Activo
                 };
 
-                return CreatedAtAction(nameof(GetById), new { id }, nuevaPersona);
+            return CreatedAtAction(nameof(GetById), new { id }, nuevaPersona);
         } // Finn create
          
         // PUT: api/personas/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] PersonaActualizarDto dto)
         {
+
             
-                if (id != dto.IdPersona)
-                    return BadRequest(new { Mensaje = "El ID de la URL no coincide con el ID del cuerpo" });
+            var validationResultado = await _validatorActualizarPersona.ValidateAsync(dto);
+
+            if (!validationResultado.IsValid)
+            {
+                 var errores = validationResultado.Errors.Select(e => e.ErrorMessage).ToList();
+                 return BadRequest(new { Mensaje = "Error de validación", Errores = errores });              
+            }
+
+            if (id != dto.IdPersona)
+                return BadRequest(new { Mensaje = "El ID de la URL no coincide con el ID del cuerpo" });
 
                 //Convertir DTO -> Entidad
                 Persona persona = new Persona

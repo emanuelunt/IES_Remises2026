@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NwMptszU8HI=",
+  "dgSpecHash": "amO50+7mEyA=",
   "success": true,
   "projectFilePath": "D:\\ProyectosIES2025\\IES_Remises\\RemisIES2026\\Remis.TESTS\\Remis.TESTS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Monitor_Plano\\.nuget\\packages\\coverlet.collector\\6.0.4\\coverlet.collector.6.0.4.nupkg.sha512",
+    "C:\\Users\\Monitor_Plano\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\Monitor_Plano\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
     "C:\\Users\\Monitor_Plano\\.nuget\\packages\\microsoft.codecoverage\\17.14.1\\microsoft.codecoverage.17.14.1.nupkg.sha512",
     "C:\\Users\\Monitor_Plano\\.nuget\\packages\\microsoft.extensions.configuration\\10.0.11\\microsoft.extensions.configuration.10.0.11.nupkg.sha512",

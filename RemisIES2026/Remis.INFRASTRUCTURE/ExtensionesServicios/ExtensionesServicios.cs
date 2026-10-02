@@ -24,6 +24,7 @@ namespace Remis.INFRASTRUCTURE.ExtensionesServicios
 
             services.AddScoped<IRepositorioPersona, RepositorioPersona>();
             services.AddScoped<ServicioPersona>();
+                       
 
             return services;
         }

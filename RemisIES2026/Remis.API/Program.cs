@@ -1,5 +1,8 @@
 
 
+using FluentValidation;
+using Remis.API.DTOs.Persona;
+using Remis.API.Validadores;
 using Remis.INFRASTRUCTURE.ExtensionesServicios;
 
 namespace Remis.API
@@ -12,6 +15,11 @@ namespace Remis.API
 
             // Add services to the container.
             builder.Services.AddInfrastructure(builder.Configuration);
+
+           
+            // Agrega el servicio de validación de modelos
+            builder.Services.AddScoped<IValidator<PersonaCrearDto>, PersonaCrearValidator>();
+            builder.Services.AddScoped<IValidator<PersonaActualizarDto>, PersonaActualizarValidador>();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
